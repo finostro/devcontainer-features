@@ -1,0 +1,6 @@
+{
+    "name": "vcstool",
+    "id": "vcstool",
+    "version": "1.0.0",
+    "description": "Installs the vcstool git manager",
+}
