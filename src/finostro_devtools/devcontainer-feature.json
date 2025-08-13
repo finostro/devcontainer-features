@@ -1,13 +1,12 @@
 {
     "name": "finostro_devtools",
     "id": "finostro_devtools",
-    "version": "1.0.7",
+    "version": "0.0.1",
     "description": "Installs my personal dev tools and environment",
     "installsAfter": [
         "ghcr.io/devcontainers/features/rust",
         "ghcr.io/duduribeiro/devcontainer-features/neovim:1",
         "ghcr.io/braun-daniel/devcontainer-features/fzf:1",
-        "ghcr.io/jungaretti/features/ripgrep:1": {},
         "ghcr.io/devcontainers/features/common-utils"
     ] 
-} 
+}
