@@ -18,7 +18,7 @@ chown -R ${_REMOTE_USER}:${_REMOTE_USER} default_venv
 
 
 # setup argcomplete for older ubuntus
-if [ ! -f /usr/bin/register-python-argcomplete]; then
+if [ ! -f /usr/bin/register-python-argcomplete ]; then
     if [ -f /usr/bin/register-python-argcomplete3 ]; then
         ln -s /usr/bin/register-python-argcomplete3 /usr/bin/register-python-argcomplete
     else
