@@ -1,7 +1,7 @@
 {
     "name": "finostro_devtools",
     "id": "finostro_devtools",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Installs my personal dev tools and environment",
     "installsAfter": [
         "ghcr.io/devcontainers/features/rust",
