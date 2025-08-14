@@ -13,7 +13,7 @@ apt-get install -y \
     python3-venv
 
 cd /home/${_REMOTE_USER}
-python3 -m venv default_venv --system-site-packages
+python3 -m venv /home/${_REMOTE_USER}/default_venv --system-site-packages
 chown -R ${_REMOTE_USER}:${_REMOTE_USER} default_venv
 
 
