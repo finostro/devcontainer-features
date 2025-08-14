@@ -12,8 +12,10 @@ apt-get install -y \
     zsh \
     python3-venv
 
-cd /root
+cd /home/${_REMOTE_USER}
 python3 -m venv default_venv --system-site-packages
+chown -R ${_REMOTE_USER}:${_REMOTE_USER} default_venv
+
 
 # setup argcomplete for older ubuntus
 if [ ! -a /usr/bin/register-python-argcomplete]; then
@@ -26,7 +28,7 @@ fi
 
 # tree-sitter-cli is required for nvim vimtex plugin
 cargo install tree-sitter-cli
-nvim --headless "+Lazy! sync" +qa
+# nvim --headless "+Lazy! sync" +qa
 
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
